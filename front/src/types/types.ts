@@ -64,4 +64,5 @@ export interface IAuthorsStore {
   onAuthorStoriesClicked: boolean;
 
   getAuthors: () => void;
+  setAuthorStoriesClicked: (condition: boolean) => void;
 }

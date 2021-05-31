@@ -52,7 +52,11 @@ const Header = (): React.ReactElement => {
     userLogin: string;
     setUserLogin: (login: string) => void;
   } = useAuthStore();
-  const { setAuthorStoriesClicked }: any = useAuthorsStore();
+
+  const {
+    setAuthorStoriesClicked,
+  }: { setAuthorStoriesClicked: (condition: boolean) => void } =
+    useAuthorsStore();
   console.log(authData);
 
   const [user, setUser] = React.useState<ILocalStorage | null>(
