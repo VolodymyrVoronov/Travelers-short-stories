@@ -18,6 +18,18 @@ const StoryContainer = styled.section`
   &:last-child {
     border-bottom: none;
   }
+
+  @media ${device.mobileS} {
+    padding: 40px 0;
+  }
+
+  @media ${device.mobileL} {
+    padding: 45px 0;
+  }
+
+  @media ${device.tablet} {
+    padding: 50px 0;
+  }
 `;
 
 const StoryHeader = styled.header`
@@ -25,6 +37,14 @@ const StoryHeader = styled.header`
   flex-direction: row;
   align-items: baseline;
   justify-content: space-between;
+
+  @media ${device.mobileS} {
+    flex-direction: column;
+  }
+
+  @media ${device.laptop} {
+    flex-direction: row;
+  }
 `;
 
 const StoryTitle = styled.h2`
@@ -36,6 +56,30 @@ const StoryTitle = styled.h2`
   font-weight: 500;
 
   color: ${colors.whiteOpacity08};
+
+  @media ${device.mobileS} {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media ${device.mobileM} {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media ${device.mobileL} {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  @media ${device.tablet} {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  @media ${device.laptop} {
+    font-size: 26px;
+  }
 `;
 
 const StoryAuthor = styled.p`
@@ -48,6 +92,18 @@ const StoryAuthor = styled.p`
   font-style: italic;
 
   color: ${colors.whiteOpacity08};
+
+  @media ${device.mobileS} {
+    margin-top: 10px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media ${device.mobileM} {
+    font-size: 18px;
+    line-height: 22px;
+  }
 `;
 
 const StoryBody = styled.div`
@@ -57,6 +113,26 @@ const StoryBody = styled.div`
   justify-content: space-between;
 
   margin-top: 35px;
+
+  @media ${device.mobileS} {
+    flex-direction: column;
+
+    margin-top: 20px;
+  }
+
+  @media ${device.mobileL} {
+    margin-top: 25px;
+  }
+
+  @media ${device.tablet} {
+    margin-top: 30px;
+  }
+
+  @media ${device.laptop} {
+    flex-direction: row;
+
+    margin-top: 35px;
+  }
 `;
 
 const StoryImages = styled.div`
@@ -66,6 +142,14 @@ const StoryImages = styled.div`
   align-content: flex-start;
 
   width: 45%;
+
+  @media ${device.mobileS} {
+    width: 100%;
+  }
+
+  @media ${device.laptop} {
+    width: 45%;
+  }
 `;
 
 const StoryImage = styled.div`
@@ -78,6 +162,16 @@ const StoryImage = styled.div`
 
   div {
     font-size: 0;
+  }
+
+  @media ${device.mobileS} {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  @media ${device.laptop} {
+    margin-right: 10px;
+    margin-bottom: 10px;
   }
 `;
 
@@ -94,6 +188,20 @@ const StoryText = styled.p`
   text-shadow: 0px 0px 10px ${colors.black};
 
   color: ${colors.whiteOpacity08};
+
+  @media ${device.mobileS} {
+    width: 100%;
+
+    line-height: 24px;
+  }
+
+  @media ${device.mobileL} {
+    line-height: 26px;
+  }
+
+  @media ${device.laptop} {
+    width: 50%;
+  }
 `;
 
 const StoryFooter = styled.footer`
@@ -102,6 +210,23 @@ const StoryFooter = styled.footer`
   align-items: flex-end;
 
   margin-top: 35px;
+
+  @media ${device.mobileS} {
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 25px;
+  }
+  @media ${device.mobileL} {
+    margin-top: 30px;
+  }
+
+  @media ${device.tablet} {
+    flex-direction: row;
+    align-items: flex-end;
+
+    margin-top: 35px;
+  }
 `;
 
 const StoryTags = styled.ul`
@@ -110,6 +235,16 @@ const StoryTags = styled.ul`
   align-items: flex-start;
 
   width: 45%;
+
+  @media ${device.mobileS} {
+    justify-content: center;
+    width: 100%;
+  }
+
+  @media ${device.tablet} {
+    justify-content: flex-start;
+    width: 45%;
+  }
 `;
 
 const StoryTagsTitle = styled.p`
@@ -173,6 +308,22 @@ const StoryFooterButtons = styled.div`
   justify-content: flex-end;
 
   width: 50%;
+
+  @media ${device.mobileS} {
+    justify-content: center;
+
+    margin-top: 25px;
+
+    width: 100%;
+  }
+
+  @media ${device.tablet} {
+    justify-content: flex-end;
+
+    width: 50%;
+
+    margin-top: 0;
+  }
 `;
 
 const StoryFooterButton = styled.button`
@@ -256,6 +407,22 @@ const StoryConfirmDialog = styled.div`
   flex-direction: column;
 
   width: 25%;
+
+  @media ${device.mobileS} {
+    width: 90%;
+  }
+
+  @media ${device.tablet} {
+    width: 70%;
+  }
+
+  @media ${device.laptop} {
+    width: 50%;
+  }
+
+  @media ${device.laptopL} {
+    width: 25%;
+  }
 `;
 
 const StoryConfirmDialogTitle = styled.p`
@@ -271,6 +438,21 @@ const StoryConfirmDialogTitle = styled.p`
   text-align: center;
 
   color: ${colors.whiteOpacity08};
+
+  @media ${device.mobileS} {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  @media ${device.mobileM} {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  @media ${device.mobileL} {
+    font-size: 26px;
+    line-height: 32px;
+  }
 `;
 
 const StoryConfirmDialogText = styled.p`
@@ -286,6 +468,21 @@ const StoryConfirmDialogText = styled.p`
   text-align: center;
 
   color: ${colors.whiteOpacity08};
+
+  @media ${device.mobileS} {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  @media ${device.mobileM} {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  @media ${device.mobileL} {
+    font-size: 26px;
+    line-height: 32px;
+  }
 `;
 
 const StoryConfirmDialogButtons = styled.div`
@@ -293,6 +490,16 @@ const StoryConfirmDialogButtons = styled.div`
   justify-content: space-between;
 
   margin-top: 15px;
+
+  @media ${device.mobileS} {
+    flex-direction: column;
+  }
+
+  @media ${device.tablet} {
+    flex-direction: row;
+
+    margin-top: 30px;
+  }
 `;
 
 const StoryConfirmDialogButton = styled.button`
@@ -324,6 +531,18 @@ const StoryConfirmDialogButton = styled.button`
     box-shadow: 5px 5px 0px 0px ${colors.whiteOpacity09};
 
     transition: 0.3s ease;
+  }
+
+  @media ${device.mobileS} {
+    width: 100%;
+
+    margin-top: 15px;
+  }
+
+  @media ${device.tablet} {
+    width: 46%;
+
+    margin: 0;
   }
 `;
 

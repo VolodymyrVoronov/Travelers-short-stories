@@ -18,6 +18,7 @@ const NoStoriesTitle = styled.p`
   line-height: 30px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+  text-align: center;
 
   color: ${colors.whiteOpacity08};
 `;

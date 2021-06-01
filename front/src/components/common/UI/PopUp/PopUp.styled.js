@@ -16,6 +16,25 @@ const PopUpContainer = styled.div`
   padding: 25px 50px;
 
   background-color: ${colors.blackOpacity09};
+
+  @media ${device.mobileS} {
+    padding: 10px 20px;
+  }
+
+  @media ${device.mobileM} {
+  }
+
+  @media ${device.mobileL} {
+    padding: 15px 30px;
+  }
+
+  @media ${device.tablet} {
+    padding: 20px 40px;
+  }
+
+  @media ${device.laptop} {
+    padding: 25px 50px;
+  }
 `;
 
 const PopUpHeader = styled.div`
