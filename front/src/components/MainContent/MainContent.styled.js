@@ -1,7 +1,4 @@
-import styled, { css, keyframes } from "styled-components";
-
-import { device } from "./../../styles/breakPoints";
-import { colors } from "./../../styles/colorsPalette";
+import styled from "styled-components";
 
 const MainContentContainer = styled.div`
   display: flex;
