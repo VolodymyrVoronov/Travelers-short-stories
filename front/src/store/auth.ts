@@ -35,7 +35,6 @@ export const useAuthStore = create<IAuthStore>((set, get) => ({
     formData: IAuthStoreFormRefgistrationData,
     history: string | any
   ) => {
-    console.log(formData);
     try {
       set({ isAuthorizingFailed: false });
       set({ isAuthorizingSuccessed: false });

@@ -48,7 +48,6 @@ export const useStoriesStore = create<IStoriesStore>((set, get) => ({
   },
 
   writeStory: async (newStory: IStory) => {
-    console.log(newStory);
     try {
       const newStoryBody = {
         likeCount: 0,

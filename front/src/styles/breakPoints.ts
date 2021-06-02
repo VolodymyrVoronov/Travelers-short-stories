@@ -17,31 +17,3 @@ export const device = {
   laptopL: `(min-width: ${size.laptopL})`,
   desktop: `(min-width: ${size.desktop})`,
 };
-
-// @media ${device.mobileS} {
-
-// }
-
-// @media ${device.mobileM} {
-
-// }
-
-// @media ${device.mobileL} {
-
-// }
-
-// @media ${device.tablet} {
-
-// }
-
-// @media ${device.laptop} {
-
-// }
-
-// @media ${device.laptopL} {
-
-// }
-
-// @media ${device.desktop} {
-
-// }

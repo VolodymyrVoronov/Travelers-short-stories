@@ -57,7 +57,6 @@ const Header = (): React.ReactElement => {
     setAuthorStoriesClicked,
   }: { setAuthorStoriesClicked: (condition: boolean) => void } =
     useAuthorsStore();
-  console.log(authData);
 
   const [user, setUser] = React.useState<ILocalStorage | null>(
     JSON.parse(localStorage.getItem("profile") || "{}")

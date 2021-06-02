@@ -8,6 +8,18 @@ const RegistrationFormContainer = styled.div`
   flex-direction: column;
 
   margin: 35px 50px 50px 50px;
+
+  @media ${device.mobileS} {
+    margin: 25px 10px 50px 10px;
+  }
+
+  @media ${device.mobileL} {
+    margin: 30px 15px 50px 15px;
+  }
+
+  @media ${device.tablet} {
+    margin: 35px 50px 50px 50px;
+  }
 `;
 
 const RegistrationFormTitle = styled.h2`
@@ -18,8 +30,24 @@ const RegistrationFormTitle = styled.h2`
   line-height: 30px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+  text-align: center;
 
   color: ${colors.whiteOpacity08};
+
+  @media ${device.mobileS} {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  @media ${device.mobileM} {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  @media ${device.mobileL} {
+    font-size: 26px;
+    line-height: 30px;
+  }
 `;
 
 const RegistrationFormBody = styled.form`
@@ -30,6 +58,33 @@ const RegistrationFormBody = styled.form`
   margin-top: 35px;
 
   width: 50%;
+
+  @media ${device.mobileS} {
+    width: 95%;
+
+    margin-top: 25px;
+  }
+
+  @media ${device.mobileM} {
+    margin-top: 30px;
+  }
+
+  @media ${device.mobileL} {
+    width: 90%;
+    margin-top: 35px;
+  }
+
+  @media ${device.tablet} {
+    width: 75%;
+  }
+
+  @media ${device.laptop} {
+    width: 50%;
+  }
+
+  @media ${device.desktop} {
+    width: 30%;
+  }
 `;
 
 const RegistrationFormFullName = styled.div`
@@ -46,6 +101,21 @@ const RegistrationFormFullNameLabel = styled.label`
   font-weight: 300;
 
   color: ${colors.whiteOpacity08};
+
+  @media ${device.mobileS} {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  @media ${device.mobileM} {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media ${device.mobileL} {
+    font-size: 22px;
+    line-height: 26px;
+  }
 `;
 
 const RegistrationFormFullNameInput = styled.input`
@@ -64,6 +134,20 @@ const RegistrationFormFullNameInput = styled.input`
   background: ${colors.whiteOpacity01};
 
   border: 1px solid ${colors.whiteOpacity08};
+
+  @media ${device.mobileS} {
+    padding: 5px 5px;
+
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  @media ${device.mobileM} {
+    padding: 10px 10px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
 `;
 
 const RegistrationFormAvatar = styled.div`
@@ -93,6 +177,43 @@ const RegistrationFormAvatar = styled.div`
 
     cursor: pointer;
   }
+
+  @media ${device.mobileS} {
+    margin-top: 25px;
+
+    input {
+      width: 70%;
+
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  @media ${device.mobileM} {
+    margin-top: 30px;
+
+    input {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  @media ${device.mobileL} {
+    margin-top: 35px;
+
+    input {
+      width: 75%;
+
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  @media ${device.tablet} {
+    input {
+      width: 80%;
+    }
+  }
 `;
 
 const RegistrationFormAvatarLabel = styled.label`
@@ -104,6 +225,21 @@ const RegistrationFormAvatarLabel = styled.label`
   font-weight: 300;
 
   color: ${colors.whiteOpacity08};
+
+  @media ${device.mobileS} {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  @media ${device.mobileM} {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media ${device.mobileL} {
+    font-size: 22px;
+    line-height: 26px;
+  }
 `;
 
 const RegistrationFormAvatarPreviewContainer = styled.div`
@@ -124,6 +260,26 @@ const RegistrationFormAvatarPreview = styled.div`
   background-repeat: no-repeat;
 
   border-radius: 50%;
+
+  @media ${device.mobileS} {
+    width: 70px;
+    height: 70px;
+  }
+
+  @media ${device.mobileM} {
+    width: 80px;
+    height: 80px;
+  }
+
+  @media ${device.tablet} {
+    width: 90px;
+    height: 90px;
+  }
+
+  @media ${device.laptopL} {
+    width: 100px;
+    height: 100px;
+  }
 `;
 
 const RegistrationFormLogin = styled.div`
@@ -142,6 +298,21 @@ const RegistrationFormLoginLabel = styled.label`
   font-weight: 300;
 
   color: ${colors.whiteOpacity08};
+
+  @media ${device.mobileS} {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  @media ${device.mobileM} {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media ${device.mobileL} {
+    font-size: 22px;
+    line-height: 26px;
+  }
 `;
 
 const RegistrationFormLoginInput = styled.input`
@@ -160,6 +331,20 @@ const RegistrationFormLoginInput = styled.input`
   background: ${colors.whiteOpacity01};
 
   border: 1px solid ${colors.whiteOpacity08};
+
+  @media ${device.mobileS} {
+    padding: 5px 5px;
+
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  @media ${device.mobileM} {
+    padding: 10px 10px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
 `;
 
 const RegistrationFormPassword = styled.div`
@@ -178,6 +363,21 @@ const RegistrationFormPasswordLabel = styled.label`
   font-weight: 300;
 
   color: ${colors.whiteOpacity08};
+
+  @media ${device.mobileS} {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  @media ${device.mobileM} {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media ${device.mobileL} {
+    font-size: 22px;
+    line-height: 26px;
+  }
 `;
 
 const RegistrationFormPasswordInput = styled.input`
@@ -209,6 +409,20 @@ const RegistrationFormPasswordInput = styled.input`
           }
           outline: 1px solid ${colors.errorColor};
         `}
+
+  @media ${device.mobileS} {
+    padding: 5px 5px;
+
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  @media ${device.mobileM} {
+    padding: 10px 10px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
 `;
 
 const RegistrationFormRequired = styled.p`
@@ -271,6 +485,16 @@ const RegistrationFormButton = styled.button`
     opacity: 0.5;
 
     box-shadow: none;
+  }
+
+  @media ${device.mobileS} {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media ${device.mobileM} {
+    font-size: 20px;
+    line-height: 26px;
   }
 `;
 

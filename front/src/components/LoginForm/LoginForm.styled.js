@@ -8,6 +8,18 @@ const LoginFormContainer = styled.div`
   flex-direction: column;
 
   margin: 35px 50px 50px 50px;
+
+  @media ${device.mobileS} {
+    margin: 25px 10px 50px 10px;
+  }
+
+  @media ${device.mobileL} {
+    margin: 30px 15px 50px 15px;
+  }
+
+  @media ${device.tablet} {
+    margin: 35px 50px 50px 50px;
+  }
 `;
 
 const LoginFormTitle = styled.h2`
@@ -20,16 +32,58 @@ const LoginFormTitle = styled.h2`
   font-weight: 500;
 
   color: ${colors.whiteOpacity08};
+
+  @media ${device.mobileS} {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  @media ${device.mobileM} {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  @media ${device.mobileL} {
+    font-size: 26px;
+    line-height: 30px;
+  }
 `;
 
 const LoginFormBody = styled.form`
   display: flex;
   flex-direction: column;
 
+  width: 50%;
+
   margin: 0 auto;
   margin-top: 35px;
 
-  width: 50%;
+  @media ${device.mobileS} {
+    width: 95%;
+
+    margin-top: 25px;
+  }
+
+  @media ${device.mobileM} {
+    margin-top: 30px;
+  }
+
+  @media ${device.mobileL} {
+    width: 90%;
+    margin-top: 35px;
+  }
+
+  @media ${device.tablet} {
+    width: 75%;
+  }
+
+  @media ${device.laptop} {
+    width: 50%;
+  }
+
+  @media ${device.desktop} {
+    width: 30%;
+  }
 `;
 
 const LoginFormLogin = styled.div`
@@ -46,6 +100,21 @@ const LoginFormLoginLabel = styled.label`
   font-weight: 300;
 
   color: ${colors.whiteOpacity08};
+
+  @media ${device.mobileS} {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  @media ${device.mobileM} {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media ${device.mobileL} {
+    font-size: 22px;
+    line-height: 26px;
+  }
 `;
 
 const LoginFormLLoginInput = styled.input`
@@ -64,6 +133,20 @@ const LoginFormLLoginInput = styled.input`
   background: ${colors.whiteOpacity01};
 
   border: 1px solid ${colors.whiteOpacity08};
+
+  @media ${device.mobileS} {
+    padding: 5px 5px;
+
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  @media ${device.mobileM} {
+    padding: 10px 10px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
 `;
 
 const LoginFormPassword = styled.div`
@@ -71,6 +154,18 @@ const LoginFormPassword = styled.div`
   flex-direction: column;
 
   margin-top: 35px;
+
+  @media ${device.mobileS} {
+    margin-top: 25px;
+  }
+
+  @media ${device.mobileM} {
+    margin-top: 30px;
+  }
+
+  @media ${device.mobileL} {
+    margin-top: 35px;
+  }
 `;
 
 const LoginFormPasswordLabel = styled.label`
@@ -82,6 +177,21 @@ const LoginFormPasswordLabel = styled.label`
   font-weight: 300;
 
   color: ${colors.whiteOpacity08};
+
+  @media ${device.mobileS} {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  @media ${device.mobileM} {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media ${device.mobileL} {
+    font-size: 22px;
+    line-height: 26px;
+  }
 `;
 
 const LoginFormLPasswordInput = styled.input`
@@ -100,6 +210,20 @@ const LoginFormLPasswordInput = styled.input`
   background: ${colors.whiteOpacity01};
 
   border: 1px solid ${colors.whiteOpacity08};
+
+  @media ${device.mobileS} {
+    padding: 5px 5px;
+
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  @media ${device.mobileM} {
+    padding: 10px 10px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
 `;
 
 const LoginFormButtons = styled.div`
@@ -108,6 +232,18 @@ const LoginFormButtons = styled.div`
   justify-content: space-between;
 
   margin-top: 35px;
+
+  @media ${device.mobileS} {
+    margin-top: 25px;
+  }
+
+  @media ${device.mobileM} {
+    margin-top: 30px;
+  }
+
+  @media ${device.mobileL} {
+    margin-top: 35px;
+  }
 `;
 
 const LoginFormButton = styled.button`
@@ -149,6 +285,16 @@ const LoginFormButton = styled.button`
     opacity: 0.5;
 
     box-shadow: none;
+  }
+
+  @media ${device.mobileS} {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media ${device.mobileM} {
+    font-size: 20px;
+    line-height: 26px;
   }
 `;
 
