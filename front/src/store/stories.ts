@@ -1,6 +1,6 @@
 import create from "zustand";
 
-import { IStoriesStore, IStory } from "./../types/types";
+import { IStoriesStore, IStory } from "../types/types";
 
 import {
   fetchStories,

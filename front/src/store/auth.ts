@@ -1,9 +1,12 @@
 import create from "zustand";
 
-import { IAuthStore, IAuthStoreFormLoginData } from "../types/types";
+import {
+  IAuthStore,
+  IAuthStoreFormLoginData,
+  IAuthStoreFormRefgistrationData,
+} from "../types/types";
 
 import { login, registration } from "../api/api";
-import { IAuthStoreFormRefgistrationData } from "./../types/types";
 
 export const useAuthStore = create<IAuthStore>((set, get) => ({
   isAuthorizing: false,
