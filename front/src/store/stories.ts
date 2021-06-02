@@ -37,7 +37,6 @@ export const useStoriesStore = create<IStoriesStore>((set, get) => ({
     try {
       set({ loadingStories: true });
       const { data } = await fetchBestStories();
-      console.log(data);
       set({ stories: await data.reverse() });
       set({ loadingStories: false });
     } catch (error) {
