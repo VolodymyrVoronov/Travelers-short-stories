@@ -9,7 +9,7 @@ import NoStories from "./../common/UI/NoStories/NoStories";
 
 import { BestStoriesContainer, BestStoriesTitle } from "./BestStories.styled";
 
-const BestStories = () => {
+const BestStories = (): React.ReactElement => {
   const {
     stories,
     loadingStories,
